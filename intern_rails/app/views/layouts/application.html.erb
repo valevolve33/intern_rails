@@ -7,6 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+<nav class="nav navbar-inverse">
+	<ul class="nav nav-tabs">
+		<li class="<%='active' if current_page?(interns_home_path )%>"><%=link_to("Home",interns_home_path )%></li>
+		<li class="<%='active' if current_page?(interns_aboutUs_path )%>"><%=link_to("about Us", interns_aboutUs_path)%></li>
+	</ul>
+</nav>	
+
+
+
 
 <%= yield %>
 
